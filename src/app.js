@@ -80,7 +80,7 @@ app.get('/weather', (req, res) => {
                         error
                     })
                 } else {res.send({
-                    forecastdata,
+                    forecastdata: place_name + ": " + forecastdata,
                     location: place_name,
                     address
                 })}
